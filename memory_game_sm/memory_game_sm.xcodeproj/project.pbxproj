@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D077EFC1D986FB90056449E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D17CE4D1D98163E009C6549 /* Assets.xcassets */; };
 		7D17CE471D98163E009C6549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE461D98163E009C6549 /* AppDelegate.swift */; };
 		7D17CE491D98163E009C6549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE481D98163E009C6549 /* ViewController.swift */; };
 		7D17CE4C1D98163E009C6549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D17CE4A1D98163E009C6549 /* Main.storyboard */; };
-		7D17CE4E1D98163E009C6549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D17CE4D1D98163E009C6549 /* Assets.xcassets */; };
 		7D17CE511D98163E009C6549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D17CE4F1D98163E009C6549 /* LaunchScreen.storyboard */; };
 		7D17CE5C1D98163E009C6549 /* memory_game_smTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE5B1D98163E009C6549 /* memory_game_smTests.swift */; };
 		7D17CE671D98163E009C6549 /* memory_game_smUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE661D98163E009C6549 /* memory_game_smUITests.swift */; };
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D17CE511D98163E009C6549 /* LaunchScreen.storyboard in Resources */,
-				7D17CE4E1D98163E009C6549 /* Assets.xcassets in Resources */,
+				7D077EFC1D986FB90056449E /* Assets.xcassets in Resources */,
 				7D17CE4C1D98163E009C6549 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +484,7 @@
 				7D17CE6D1D98163E009C6549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D17CE6E1D98163E009C6549 /* Build configuration list for PBXNativeTarget "memory_game_smTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				7D17CE701D98163E009C6549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D17CE711D98163E009C6549 /* Build configuration list for PBXNativeTarget "memory_game_smUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				7D17CE731D98163E009C6549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
