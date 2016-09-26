@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-141" y="458"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ikg-1o-GXu">
             <objects>
-                <viewController id="CIv-Zs-Erq" sceneMemberID="viewController">
+                <viewController id="CIv-Zs-Erq" customClass="LoginViewController" customModule="memory_game_sm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5xo-HO-y4C"/>
                         <viewControllerLayoutGuide type="bottom" id="Ab0-vf-ZZ0"/>
@@ -34,39 +34,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHR-dH-dzV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHR-dH-dzV">
                                 <rect key="frame" x="236" y="102" width="129" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLB-gB-rNS">
-                                <rect key="frame" x="168" y="156" width="264" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9q-Gg-0nr">
+                                <rect key="frame" x="245" y="242" width="111" height="30"/>
+                                <state key="normal" title="Enter The Game"/>
+                                <connections>
+                                    <action selector="enterGame:" destination="CIv-Zs-Erq" eventType="touchUpInside" id="61T-ac-ZCo"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="loginSegue" id="dXy-gz-G73"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNL-AS-qHx">
+                                <rect key="frame" x="204" y="148" width="193" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="264" id="aYp-e6-8vF"/>
+                                    <constraint firstAttribute="width" constant="193" id="92r-zG-y3A"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9q-Gg-0nr">
-                                <rect key="frame" x="245" y="242" width="111" height="30"/>
-                                <state key="normal" title="Enter The Game"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="dXy-gz-G73"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jHR-dH-dzV" firstAttribute="top" secondItem="5xo-HO-y4C" secondAttribute="bottom" constant="42" id="CzX-wh-w0A"/>
-                            <constraint firstItem="eLB-gB-rNS" firstAttribute="top" secondItem="jHR-dH-dzV" secondAttribute="bottom" constant="29" id="H8l-5z-cR1"/>
-                            <constraint firstItem="jHR-dH-dzV" firstAttribute="leading" secondItem="K0y-le-g4d" secondAttribute="leading" constant="192" id="Kep-fv-b1i"/>
-                            <constraint firstItem="Ab0-vf-ZZ0" firstAttribute="top" secondItem="D9q-Gg-0nr" secondAttribute="bottom" constant="236" id="Q8b-AM-WG1"/>
-                            <constraint firstItem="eLB-gB-rNS" firstAttribute="centerX" secondItem="D9q-Gg-0nr" secondAttribute="centerX" id="d2o-cm-S6r"/>
-                            <constraint firstItem="eLB-gB-rNS" firstAttribute="centerX" secondItem="K0y-le-g4d" secondAttribute="centerX" id="oAB-Mp-GZt"/>
+                            <constraint firstItem="jHR-dH-dzV" firstAttribute="top" secondItem="5xo-HO-y4C" secondAttribute="bottom" constant="38" id="FPk-rh-Nkh"/>
+                            <constraint firstItem="WNL-AS-qHx" firstAttribute="centerX" secondItem="D9q-Gg-0nr" secondAttribute="centerX" id="V0E-Hx-LGH"/>
+                            <constraint firstItem="jHR-dH-dzV" firstAttribute="centerX" secondItem="K0y-le-g4d" secondAttribute="centerX" id="Wxz-qM-sEw"/>
+                            <constraint firstItem="WNL-AS-qHx" firstAttribute="top" secondItem="jHR-dH-dzV" secondAttribute="bottom" constant="25" id="iEB-jF-Rda"/>
+                            <constraint firstItem="D9q-Gg-0nr" firstAttribute="top" secondItem="WNL-AS-qHx" secondAttribute="bottom" constant="64" id="jD3-Wy-j1Y"/>
+                            <constraint firstItem="jHR-dH-dzV" firstAttribute="centerX" secondItem="WNL-AS-qHx" secondAttribute="centerX" id="w5B-jc-9v5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BCF-BX-6Rm"/>
+                    <connections>
+                        <outlet property="playerName" destination="WNL-AS-qHx" id="vSY-VP-FLX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnm-v7-laT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="2289" y="-124"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="memory_game_sm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="memory_game_sm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
