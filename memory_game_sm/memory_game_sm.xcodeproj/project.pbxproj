@@ -15,6 +15,9 @@
 		7D17CE511D98163E009C6549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D17CE4F1D98163E009C6549 /* LaunchScreen.storyboard */; };
 		7D17CE5C1D98163E009C6549 /* memory_game_smTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE5B1D98163E009C6549 /* memory_game_smTests.swift */; };
 		7D17CE671D98163E009C6549 /* memory_game_smUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE661D98163E009C6549 /* memory_game_smUITests.swift */; };
+		7DF96C041D9C8E37000CDF7F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C031D9C8E37000CDF7F /* Card.swift */; };
+		7DF96C061D9C8FBD000CDF7F /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */; };
+		7DF96C081D9C90F2000CDF7F /* CardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C071D9C90F2000CDF7F /* CardCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		7D17CE621D98163E009C6549 /* memory_game_smUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memory_game_smUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D17CE661D98163E009C6549 /* memory_game_smUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory_game_smUITests.swift; sourceTree = "<group>"; };
 		7D17CE681D98163E009C6549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF96C031D9C8E37000CDF7F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		7DF96C071D9C90F2000CDF7F /* CardCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		7D077EFE1D9877940056449E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7DF96C071D9C90F2000CDF7F /* CardCVC.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -96,6 +103,8 @@
 		7D077EFF1D98779B0056449E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7DF96C031D9C8E37000CDF7F /* Card.swift */,
+				7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,7 +295,10 @@
 			files = (
 				7D077F011D9878B60056449E /* LoginViewController.swift in Sources */,
 				7D17CE491D98163E009C6549 /* GameViewController.swift in Sources */,
+				7DF96C081D9C90F2000CDF7F /* CardCVC.swift in Sources */,
+				7DF96C061D9C8FBD000CDF7F /* MemoryGame.swift in Sources */,
 				7D17CE471D98163E009C6549 /* AppDelegate.swift in Sources */,
+				7DF96C041D9C8E37000CDF7F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
