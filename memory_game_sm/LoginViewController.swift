@@ -41,12 +41,6 @@ class LoginViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().setObject(pName, forKey: "pName");
         NSUserDefaults.standardUserDefaults().synchronize();
         
-        // Display confirm alert message
-        // displayAlertMessage("Registration successful!");
-        
-        // Set Login Acknowledge
-        loginAck = true;
-        
     }
     
     // Methodes

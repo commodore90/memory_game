@@ -15,9 +15,11 @@
 		7D17CE511D98163E009C6549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D17CE4F1D98163E009C6549 /* LaunchScreen.storyboard */; };
 		7D17CE5C1D98163E009C6549 /* memory_game_smTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE5B1D98163E009C6549 /* memory_game_smTests.swift */; };
 		7D17CE671D98163E009C6549 /* memory_game_smUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE661D98163E009C6549 /* memory_game_smUITests.swift */; };
+		7DAC16891DA14F6700C373DF /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC16881DA14F6700C373DF /* StreamReader.swift */; };
 		7DF96C041D9C8E37000CDF7F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C031D9C8E37000CDF7F /* Card.swift */; };
 		7DF96C061D9C8FBD000CDF7F /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */; };
 		7DF96C081D9C90F2000CDF7F /* CardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C071D9C90F2000CDF7F /* CardCVC.swift */; };
+		7DF96C101D9FE963000CDF7F /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C0F1D9FE963000CDF7F /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,7 @@
 		7D077F001D9878B60056449E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7D17CE431D98163E009C6549 /* memory_game_sm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memory_game_sm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D17CE461D98163E009C6549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D17CE481D98163E009C6549 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = memory_game_sm/GameViewController.swift; sourceTree = "<group>"; };
+		7D17CE481D98163E009C6549 /* GameViewController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = GameViewController.swift; path = memory_game_sm/GameViewController.swift; sourceTree = "<group>"; };
 		7D17CE4B1D98163E009C6549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D17CE4D1D98163E009C6549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D17CE501D98163E009C6549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +54,11 @@
 		7D17CE621D98163E009C6549 /* memory_game_smUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memory_game_smUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D17CE661D98163E009C6549 /* memory_game_smUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory_game_smUITests.swift; sourceTree = "<group>"; };
 		7D17CE681D98163E009C6549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DAC16881DA14F6700C373DF /* StreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
 		7DF96C031D9C8E37000CDF7F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		7DF96C071D9C90F2000CDF7F /* CardCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCVC.swift; sourceTree = "<group>"; };
+		7DF96C0F1D9FE963000CDF7F /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			children = (
 				7D17CE481D98163E009C6549 /* GameViewController.swift */,
 				7D077F001D9878B60056449E /* LoginViewController.swift */,
+				7DF96C0F1D9FE963000CDF7F /* ScoreViewController.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -105,6 +110,7 @@
 			children = (
 				7DF96C031D9C8E37000CDF7F /* Card.swift */,
 				7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */,
+				7DAC16881DA14F6700C373DF /* StreamReader.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF96C101D9FE963000CDF7F /* ScoreViewController.swift in Sources */,
 				7D077F011D9878B60056449E /* LoginViewController.swift in Sources */,
 				7D17CE491D98163E009C6549 /* GameViewController.swift in Sources */,
 				7DF96C081D9C90F2000CDF7F /* CardCVC.swift in Sources */,
+				7DAC16891DA14F6700C373DF /* StreamReader.swift in Sources */,
 				7DF96C061D9C8FBD000CDF7F /* MemoryGame.swift in Sources */,
 				7D17CE471D98163E009C6549 /* AppDelegate.swift in Sources */,
 				7DF96C041D9C8E37000CDF7F /* Card.swift in Sources */,

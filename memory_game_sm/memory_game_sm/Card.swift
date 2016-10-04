@@ -20,7 +20,7 @@ class Card {
     var shown:Bool = false
     var image:UIImage
     
-    // Constructor
+    // Constructor metodes
     init(image:UIImage) {
         self.image = image
     }
@@ -30,11 +30,6 @@ class Card {
         self.shown = card.shown
         self.image = card.image.copy() as! UIImage
     }
-    
-    
-    //var description: String {
-    //    return "\(id.UUIDString)"
-    //}
     
     func equals(card: Card) -> Bool {
         return card.id.isEqual(id)
