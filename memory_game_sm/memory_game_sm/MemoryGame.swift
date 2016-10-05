@@ -54,7 +54,7 @@ extension NSData {
             fileHandle.writeData(self)
         }
         else {
-            try writeToURL(fileURL, atomically: false)
+            writeToURL(fileURL, atomically: false)
         }
     }
 }
@@ -119,7 +119,7 @@ class MemoryGame {
         startTime = NSDate.init()
         isPlaying = true
         delegate?.memoryGameDidStart(self)
-        //finishGame()
+        // finishGame()
     }
     
     func didSelectCard(card: Card?) {
@@ -253,7 +253,4 @@ class MemoryGame {
         cards.shuffle()
         return cards
     }
-    
-
-    
 }

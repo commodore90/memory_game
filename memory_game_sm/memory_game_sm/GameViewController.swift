@@ -8,6 +8,15 @@
 
 import UIKit
 
+// Swift 3 has rounding feature allready implemented :(
+extension Float {
+    /// Rounds the double to decimal places value
+    func roundToPlaces(places:Int) -> Float {
+        let divisor = pow(10.0, Float(places))
+        return round(self * divisor) / divisor
+    }
+}
+
 class GameViewController: UIViewController, MemoryGameDelegate, passModelReferenceToSvcDelegate {// UICollectionViewDelegate, UICollectionViewDataSource, MemoryGameDelegate {
 
     // Outlets
@@ -154,22 +163,15 @@ class GameViewController: UIViewController, MemoryGameDelegate, passModelReferen
         
         // Store result in text file
         gameModel.scoreFile = file
-        let text:String = playerName + " | " + String(elapsedTime) + " | " + String(clickNumber)
+        let text:String = playerName + " : " + " Time: " + String(Float(elapsedTime).roundToPlaces(2)) + " | " + " Clicks: " + String(clickNumber)
         
+        // Write score to file
         gameModel.appendScoreToFile(textInput: text, fileName: file)
-        
-        // Alert Notification before Modal View -> AlertController -> Action -> presentViewController(Modal ViewController)
-        // Get scoreVC instance
-        /*
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let scoreVC = storyboard.instantiateViewControllerWithIdentifier("scoreViewController")
-        */
-        // pass data to scoreVC
         
         let alertController = UIAlertController(
             title: NSLocalizedString("Game Finished!", comment: "title"),
-            message: String(format: "%@ %.0f seconds \n %d Clicks", NSLocalizedString("Game finished in", comment: "message"), NSLocalizedString("Click number", comment: "message"), elapsedTime, clickNumber),
-            preferredStyle: .Alert)
+            message: String(format: "%@ %.2f seconds \n %d Clicks", NSLocalizedString("Game finished in", comment: "message"),  elapsedTime, clickNumber),
+            preferredStyle: .Alert) // NSLocalizedString("Click number", comment: "message"),
         
         let okAction = UIAlertAction(title:"Ok", style: UIAlertActionStyle.Default, handler: {
             // action in self.presentViewController(scoreVC, animated: true, completion: nil);
@@ -178,17 +180,6 @@ class GameViewController: UIViewController, MemoryGameDelegate, passModelReferen
         );
         alertController.addAction(okAction);
         self.presentViewController(alertController, animated: true, completion: nil)
-        
-        /*
-        let saveScoreAction = UIAlertAction(title: NSLocalizedString("Save Score", comment: "save score"), style: .Default) { [weak self] (_) in
-            let nameTextField = alertController.textFields![0] as UITextField
-            guard let name = nameTextField.text else { return }
-            self?.savePlayerScore(name, score: elapsedTime)
-            self?.resetGame()
-        }
-         */
-        //saveScoreAction.enabled = false
-        //alertController.addAction(saveScoreAction)
 
     }
     // ======================================================= END ==================================================================

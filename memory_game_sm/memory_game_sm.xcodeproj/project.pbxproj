@@ -15,6 +15,11 @@
 		7D17CE511D98163E009C6549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D17CE4F1D98163E009C6549 /* LaunchScreen.storyboard */; };
 		7D17CE5C1D98163E009C6549 /* memory_game_smTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE5B1D98163E009C6549 /* memory_game_smTests.swift */; };
 		7D17CE671D98163E009C6549 /* memory_game_smUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17CE661D98163E009C6549 /* memory_game_smUITests.swift */; };
+		7D60E6AF1DA58CAA0098AAA3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D60E6AD1DA58CAA0098AAA3 /* FBSDKLoginKit.framework */; };
+		7D60E6B01DA58CAA0098AAA3 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D60E6AE1DA58CAA0098AAA3 /* FBSDKShareKit.framework */; };
+		7D60E6B21DA594510098AAA3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D60E6B11DA594510098AAA3 /* Bolts.framework */; };
+		7DA205861DA46BAF00181941 /* FaceTwitterIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA205851DA46BAF00181941 /* FaceTwitterIntegration.swift */; };
+		7DA2058A1DA47D3400181941 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA205891DA47D3400181941 /* FBSDKCoreKit.framework */; };
 		7DAC16891DA14F6700C373DF /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC16881DA14F6700C373DF /* StreamReader.swift */; };
 		7DF96C041D9C8E37000CDF7F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C031D9C8E37000CDF7F /* Card.swift */; };
 		7DF96C061D9C8FBD000CDF7F /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */; };
@@ -54,6 +59,12 @@
 		7D17CE621D98163E009C6549 /* memory_game_smUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memory_game_smUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D17CE661D98163E009C6549 /* memory_game_smUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory_game_smUITests.swift; sourceTree = "<group>"; };
 		7D17CE681D98163E009C6549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D60E6AD1DA58CAA0098AAA3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7D60E6AE1DA58CAA0098AAA3 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7D60E6B11DA594510098AAA3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7DA205851DA46BAF00181941 /* FaceTwitterIntegration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceTwitterIntegration.swift; sourceTree = "<group>"; };
+		7DA205881DA4767400181941 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		7DA205891DA47D3400181941 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7DAC16881DA14F6700C373DF /* StreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
 		7DF96C031D9C8E37000CDF7F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
@@ -66,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D60E6B21DA594510098AAA3 /* Bolts.framework in Frameworks */,
+				7D60E6AF1DA58CAA0098AAA3 /* FBSDKLoginKit.framework in Frameworks */,
+				7D60E6B01DA58CAA0098AAA3 /* FBSDKShareKit.framework in Frameworks */,
+				7DA2058A1DA47D3400181941 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +126,7 @@
 				7DF96C031D9C8E37000CDF7F /* Card.swift */,
 				7DF96C051D9C8FBD000CDF7F /* MemoryGame.swift */,
 				7DAC16881DA14F6700C373DF /* StreamReader.swift */,
+				7DA205851DA46BAF00181941 /* FaceTwitterIntegration.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -118,6 +134,10 @@
 		7D17CE3A1D98163E009C6549 = {
 			isa = PBXGroup;
 			children = (
+				7D60E6B11DA594510098AAA3 /* Bolts.framework */,
+				7D60E6AD1DA58CAA0098AAA3 /* FBSDKLoginKit.framework */,
+				7D60E6AE1DA58CAA0098AAA3 /* FBSDKShareKit.framework */,
+				7DA205891DA47D3400181941 /* FBSDKCoreKit.framework */,
 				7D17CE451D98163E009C6549 /* memory_game_sm */,
 				7D17CE5A1D98163E009C6549 /* memory_game_smTests */,
 				7D17CE651D98163E009C6549 /* memory_game_smUITests */,
@@ -138,6 +158,7 @@
 		7D17CE451D98163E009C6549 /* memory_game_sm */ = {
 			isa = PBXGroup;
 			children = (
+				7DA205871DA475E600181941 /* Header */,
 				7D077EFF1D98779B0056449E /* Model */,
 				7D077EFE1D9877940056449E /* View */,
 				7D077EFD1D9877150056449E /* Controller */,
@@ -166,6 +187,14 @@
 				7D17CE681D98163E009C6549 /* Info.plist */,
 			);
 			path = memory_game_smUITests;
+			sourceTree = "<group>";
+		};
+		7DA205871DA475E600181941 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7DA205881DA4767400181941 /* Bridging-Header.h */,
+			);
+			name = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +336,7 @@
 				7DF96C061D9C8FBD000CDF7F /* MemoryGame.swift in Sources */,
 				7D17CE471D98163E009C6549 /* AppDelegate.swift in Sources */,
 				7DF96C041D9C8E37000CDF7F /* Card.swift in Sources */,
+				7DA205861DA46BAF00181941 /* FaceTwitterIntegration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,10 +480,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = memory_game_sm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Stefan.memory-game-sm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "memory_game_sm/Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Debug;
 		};
@@ -461,10 +497,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = memory_game_sm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Stefan.memory-game-sm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "memory_game_sm/Bridging-Header.h";
 			};
 			name = Release;
 		};
